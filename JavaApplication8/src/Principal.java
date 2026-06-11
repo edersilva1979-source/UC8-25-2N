@@ -1,3 +1,7 @@
+
+import java.beans.PropertyVetoException;
+import javax.swing.JInternalFrame;
+
 /**
  *
  * @author Éder Silva
@@ -31,9 +35,12 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -47,6 +54,13 @@ public class Principal extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        jMenu7 = new javax.swing.JMenu();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem18 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem17 = new javax.swing.JMenuItem();
 
         jPopupMenu1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPopupMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -116,7 +130,7 @@ public class Principal extends javax.swing.JFrame {
         desktopPrincipal.setLayout(desktopPrincipalLayout);
         desktopPrincipalLayout.setHorizontalGroup(
             desktopPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 891, Short.MAX_VALUE)
+            .addGap(0, 964, Short.MAX_VALUE)
         );
         desktopPrincipalLayout.setVerticalGroup(
             desktopPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,6 +141,7 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu1.setText("Cadastro");
 
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
         jMenuItem1.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\cliente.png")); // NOI18N
         jMenuItem1.setText("Clientes");
         jMenuItem1.setToolTipText("");
@@ -139,17 +154,36 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
+        jMenuItem11.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\caixa.png")); // NOI18N
+        jMenuItem11.setText("Produto");
+        jMenuItem11.addActionListener(this::jMenuItem11ActionPerformed);
+        jMenu1.add(jMenuItem11);
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, 0));
         jMenuItem2.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\ordem-de-servico.png")); // NOI18N
         jMenuItem2.setText("Serviços");
+        jMenuItem2.addActionListener(this::jMenuItem2ActionPerformed);
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Movimento");
+        jMenu2.setText("Consulta");
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\pedido.png")); // NOI18N
-        jMenuItem3.setText("Ordem de Serviço");
+        jMenuItem3.setText("Cliente");
+        jMenuItem3.addActionListener(this::jMenuItem3ActionPerformed);
         jMenu2.add(jMenuItem3);
+
+        jMenuItem12.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\cubos.png")); // NOI18N
+        jMenuItem12.setText("Produto");
+        jMenuItem12.addActionListener(this::jMenuItem12ActionPerformed);
+        jMenu2.add(jMenuItem12);
+
+        jMenuItem13.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\prancheta.png")); // NOI18N
+        jMenuItem13.setText("Serviço");
+        jMenuItem13.addActionListener(this::jMenuItem13ActionPerformed);
+        jMenu2.add(jMenuItem13);
 
         jMenuBar1.add(jMenu2);
 
@@ -161,12 +195,14 @@ public class Principal extends javax.swing.JFrame {
         jMenu3.add(jMenuItem4);
 
         jMenuItem5.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\imprimir.png")); // NOI18N
-        jMenuItem5.setText("Serviços");
+        jMenuItem5.setText("Produtos");
+        jMenuItem5.addActionListener(this::jMenuItem5ActionPerformed);
         jMenu3.add(jMenuItem5);
         jMenu3.add(jSeparator1);
 
         jMenuItem6.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\imprimir.png")); // NOI18N
-        jMenuItem6.setText("Ordem de Serviços");
+        jMenuItem6.setText("Serviços");
+        jMenuItem6.addActionListener(this::jMenuItem6ActionPerformed);
         jMenu3.add(jMenuItem6);
 
         jMenuBar1.add(jMenu3);
@@ -198,6 +234,31 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu6.setText("Ajuda");
         jMenuBar1.add(jMenu6);
+
+        jMenu7.setText("Janela");
+
+        jMenuItem14.setText("Lado a Lado Verticalmente");
+        jMenuItem14.addActionListener(this::jMenuItem14ActionPerformed);
+        jMenu7.add(jMenuItem14);
+
+        jMenuItem15.setText("Em Grade");
+        jMenuItem15.addActionListener(this::jMenuItem15ActionPerformed);
+        jMenu7.add(jMenuItem15);
+
+        jMenuItem18.setText("Em Cascata");
+        jMenuItem18.addActionListener(this::jMenuItem18ActionPerformed);
+        jMenu7.add(jMenuItem18);
+
+        jMenuItem16.setText("Minimizar Todas");
+        jMenuItem16.addActionListener(this::jMenuItem16ActionPerformed);
+        jMenu7.add(jMenuItem16);
+        jMenu7.add(jSeparator3);
+
+        jMenuItem17.setText("Fechar Todas");
+        jMenuItem17.addActionListener(this::jMenuItem17ActionPerformed);
+        jMenu7.add(jMenuItem17);
+
+        jMenuBar1.add(jMenu7);
 
         setJMenuBar(jMenuBar1);
 
@@ -235,7 +296,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1KeyPressed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
+        RelCli relcli = new RelCli();
+
+        desktopPrincipal.add(relcli);
+
+        relcli.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void ClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClienteActionPerformed
@@ -247,6 +312,168 @@ public class Principal extends javax.swing.JFrame {
         setVisible(false);
         telalogin.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jMenuItem16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem16ActionPerformed
+        try {
+    for (JInternalFrame frame : desktopPrincipal.getAllFrames()) {
+        frame.setIcon(true);
+    }
+} catch (PropertyVetoException e) {
+    e.printStackTrace();
+}
+    }//GEN-LAST:event_jMenuItem16ActionPerformed
+
+    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+        JInternalFrame[] frames = desktopPrincipal.getAllFrames();
+
+    if (frames.length == 0) {
+        return;
+    }
+
+    int larguraDesktop = desktopPrincipal.getWidth();
+    int alturaDesktop = desktopPrincipal.getHeight();
+
+    int larguraFrame = larguraDesktop / frames.length;
+
+    for (int i = 0; i < frames.length; i++) {
+
+        try {
+            frames[i].setIcon(false); // restaura se estiver minimizada
+            frames[i].setMaximum(false); // remove maximização
+        } catch (Exception e) {
+        }
+
+        frames[i].setBounds(
+            i * larguraFrame,  // posição X
+            0,                 // posição Y
+            larguraFrame,      // largura
+            alturaDesktop      // altura
+        );
+    }
+    }//GEN-LAST:event_jMenuItem14ActionPerformed
+
+    private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
+         JInternalFrame[] frames = desktopPrincipal.getAllFrames();
+
+    int deslocamento = 30;
+
+    for (int i = 0; i < frames.length; i++) {
+
+        try {
+            frames[i].setIcon(false);
+            frames[i].setMaximum(false);
+        } catch (Exception e) {
+        }
+
+        frames[i].setBounds(
+            i * deslocamento,
+            i * deslocamento,
+            600,
+            400
+        );
+    }
+    }//GEN-LAST:event_jMenuItem18ActionPerformed
+
+    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+           JInternalFrame[] frames = desktopPrincipal.getAllFrames();
+
+    if (frames.length == 0) {
+        return;
+    }
+
+    int cols = (int) Math.ceil(Math.sqrt(frames.length));
+    int rows = (int) Math.ceil((double) frames.length / cols);
+
+    int largura = desktopPrincipal.getWidth() / cols;
+    int altura = desktopPrincipal.getHeight() / rows;
+
+    int x = 0;
+    int y = 0;
+    int contador = 0;
+
+    for (JInternalFrame frame : frames) {
+
+        try {
+            frame.setIcon(false);
+            frame.setMaximum(false);
+        } catch (Exception e) {
+        }
+
+        frame.setBounds(x, y, largura, altura);
+
+        contador++;
+        x += largura;
+
+        if (contador % cols == 0) {
+            x = 0;
+            y += altura;
+        }
+    }
+    }//GEN-LAST:event_jMenuItem15ActionPerformed
+
+    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
+         JInternalFrame[] frames = desktopPrincipal.getAllFrames();
+
+    for (JInternalFrame frame : frames) {
+        frame.dispose();
+    }
+    }//GEN-LAST:event_jMenuItem17ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+         CadProsuto telaprod = new CadProsuto();
+
+        desktopPrincipal.add(telaprod);
+
+        telaprod.setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        CadServico cadservico = new CadServico();
+
+        desktopPrincipal.add(cadservico);
+
+        cadservico.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        ConCli concli = new ConCli();
+
+        desktopPrincipal.add(concli);
+
+        concli.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        Conprod conprod = new Conprod();
+
+        desktopPrincipal.add(conprod);
+
+        conprod.setVisible(true);
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+        Conservico conservico = new Conservico();
+
+        desktopPrincipal.add(conservico);
+
+        conservico.setVisible(true);
+    }//GEN-LAST:event_jMenuItem13ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        RelProd relprod = new RelProd();
+
+        desktopPrincipal.add(relprod);
+
+        relprod.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        RelServico relservico = new RelServico();
+
+        desktopPrincipal.add(relservico);
+
+        relservico.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
   
     public static void main(String args[]) {
@@ -268,9 +495,18 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
@@ -283,6 +519,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JToolBar jToolBar1;
     // End of variables declaration//GEN-END:variables
 }
