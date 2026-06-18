@@ -6,8 +6,14 @@ import javax.swing.JOptionPane;
  * png
  * @author comercial3
  */
+
+
+   
+        
+        
 public class telaLogin extends javax.swing.JFrame {
     
+          
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(telaLogin.class.getName());
 
     /**

@@ -50,9 +50,6 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="F2"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\cliente.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -69,9 +66,6 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="F3"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\caixa.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Produto"/>
               </Properties>
               <Events>
@@ -82,9 +76,6 @@
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="F4"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\ordem-de-servico.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;os"/>
               </Properties>
@@ -101,9 +92,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\pedido.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
               <Events>
@@ -112,9 +100,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem12">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\cubos.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Produto"/>
               </Properties>
               <Events>
@@ -123,9 +108,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem13">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\prancheta.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
               </Properties>
               <Events>
@@ -141,9 +123,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\imprimir.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
               <Events>
@@ -152,9 +131,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\imprimir.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Produtos"/>
               </Properties>
               <Events>
@@ -165,9 +141,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\imprimir.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;os"/>
               </Properties>
               <Events>
@@ -183,17 +156,11 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\pedido.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Agenda"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\dinheiro.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Calculadora"/>
               </Properties>
             </MenuItem>
@@ -201,9 +168,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\prancheta.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Bloco de Notas"/>
               </Properties>
             </MenuItem>
@@ -216,9 +180,6 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\painel-de-controle.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Informa&#xe7;&#xf5;es sobre o Sistema"/>
               </Properties>
             </MenuItem>
@@ -373,7 +334,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\cliente(1).png"/>
+              <Image iconType="2" name="C:\Users\Ed Solu&#xe7;&#xf5;es\Documents\01 - Senac\UC8 - JAVA\Icones\32 x 32\cliente(1).png"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value="Cadastro de Clientes"/>
           </Properties>
@@ -381,7 +342,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\descricao-do-produto.png"/>
+              <Image iconType="2" name="C:\Users\Ed Solu&#xe7;&#xf5;es\Documents\01 - Senac\UC8 - JAVA\Icones\32 x 32\caixa(1).png"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value="Cadastro de Servi&#xe7;os"/>
           </Properties>
@@ -389,7 +350,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\ordem-de-servico.png"/>
+              <Image iconType="2" name="C:\Users\Ed Solu&#xe7;&#xf5;es\Documents\01 - Senac\UC8 - JAVA\Icones\32 x 32\ordem-de-servico.png"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value="Gerar Ordem de Servi&#xe7;os"/>
           </Properties>
@@ -397,7 +358,7 @@
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\Documentos\UC08\Aula04\Icones\32 x 32\erro.png"/>
+              <Image iconType="2" name="C:\Users\Ed Solu&#xe7;&#xf5;es\Documents\01 - Senac\UC8 - JAVA\Icones\32 x 32\atualizacao-do-sistema.png"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value="Clique aqui para fazer Logout"/>
             <Property name="horizontalAlignment" type="int" value="4"/>

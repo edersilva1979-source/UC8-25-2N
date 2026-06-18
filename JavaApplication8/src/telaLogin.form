@@ -159,9 +159,6 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\comercial3\OneDrive - SPS Power\&#xc1;rea de Trabalho\boxmodel2\711769.png"/>
-            </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="campoEmail">

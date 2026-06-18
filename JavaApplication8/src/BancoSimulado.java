@@ -1,4 +1,5 @@
 
+import modelo.Usuario;
 import java.util.ArrayList;
 import modelo.Clientes;
 import modelo.Produto;
@@ -57,7 +58,8 @@ public class BancoSimulado {
             new Produto(
                 idProduto++,
                 "Placa Principal",
-                825.90
+                825.90,
+                3    
             )
         );
 
@@ -65,7 +67,8 @@ public class BancoSimulado {
             new Produto(
                 idProduto++,
                 "Memoria RAM 16GB",
-                274.55
+                274.55,
+                5
             )
         );
 
@@ -73,19 +76,11 @@ public class BancoSimulado {
             new Produto(
                 idProduto++,
                 "SSD 1TB",
-                515.26
+                515.26,
+                1
             )
         );
-        
-         usuario.add(
-            new Usuario(
-                "1",
-                "1",
-                "1"
-            )
-        );
-        
-
+     
     }
 
 }

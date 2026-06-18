@@ -1,4 +1,5 @@
 
+import modelo.Usuario;
 import javax.swing.JOptionPane;
 
 

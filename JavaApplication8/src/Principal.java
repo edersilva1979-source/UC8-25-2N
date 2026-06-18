@@ -2,10 +2,7 @@
 import java.beans.PropertyVetoException;
 import javax.swing.JInternalFrame;
 
-/**
- *
- * @author Éder Silva
- */
+
 
 public class Principal extends javax.swing.JFrame {
     
@@ -82,16 +79,16 @@ public class Principal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\cliente(1).png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ed Soluções\\Documents\\01 - Senac\\UC8 - JAVA\\Icones\\32 x 32\\cliente(1).png")); // NOI18N
         jButton1.setToolTipText("Cadastro de Clientes");
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\descricao-do-produto.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ed Soluções\\Documents\\01 - Senac\\UC8 - JAVA\\Icones\\32 x 32\\caixa(1).png")); // NOI18N
         jButton2.setToolTipText("Cadastro de Serviços");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\ordem-de-servico.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ed Soluções\\Documents\\01 - Senac\\UC8 - JAVA\\Icones\\32 x 32\\ordem-de-servico.png")); // NOI18N
         jButton3.setToolTipText("Gerar Ordem de Serviços");
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\erro.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ed Soluções\\Documents\\01 - Senac\\UC8 - JAVA\\Icones\\32 x 32\\atualizacao-do-sistema.png")); // NOI18N
         jButton4.setToolTipText("Clique aqui para fazer Logout");
         jButton4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jButton4.addActionListener(this::jButton4ActionPerformed);
@@ -142,7 +139,6 @@ public class Principal extends javax.swing.JFrame {
         jMenu1.setText("Cadastro");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\cliente.png")); // NOI18N
         jMenuItem1.setText("Clientes");
         jMenuItem1.setToolTipText("");
         jMenuItem1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -155,13 +151,11 @@ public class Principal extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuItem11.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F3, 0));
-        jMenuItem11.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\caixa.png")); // NOI18N
         jMenuItem11.setText("Produto");
         jMenuItem11.addActionListener(this::jMenuItem11ActionPerformed);
         jMenu1.add(jMenuItem11);
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, 0));
-        jMenuItem2.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\ordem-de-servico.png")); // NOI18N
         jMenuItem2.setText("Serviços");
         jMenuItem2.addActionListener(this::jMenuItem2ActionPerformed);
         jMenu1.add(jMenuItem2);
@@ -170,17 +164,14 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu2.setText("Consulta");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\pedido.png")); // NOI18N
         jMenuItem3.setText("Cliente");
         jMenuItem3.addActionListener(this::jMenuItem3ActionPerformed);
         jMenu2.add(jMenuItem3);
 
-        jMenuItem12.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\cubos.png")); // NOI18N
         jMenuItem12.setText("Produto");
         jMenuItem12.addActionListener(this::jMenuItem12ActionPerformed);
         jMenu2.add(jMenuItem12);
 
-        jMenuItem13.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\prancheta.png")); // NOI18N
         jMenuItem13.setText("Serviço");
         jMenuItem13.addActionListener(this::jMenuItem13ActionPerformed);
         jMenu2.add(jMenuItem13);
@@ -189,18 +180,15 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu3.setText("Relatório");
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\imprimir.png")); // NOI18N
         jMenuItem4.setText("Clientes");
         jMenuItem4.addActionListener(this::jMenuItem4ActionPerformed);
         jMenu3.add(jMenuItem4);
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\imprimir.png")); // NOI18N
         jMenuItem5.setText("Produtos");
         jMenuItem5.addActionListener(this::jMenuItem5ActionPerformed);
         jMenu3.add(jMenuItem5);
         jMenu3.add(jSeparator1);
 
-        jMenuItem6.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\imprimir.png")); // NOI18N
         jMenuItem6.setText("Serviços");
         jMenuItem6.addActionListener(this::jMenuItem6ActionPerformed);
         jMenu3.add(jMenuItem6);
@@ -209,16 +197,13 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu4.setText("Utilitário");
 
-        jMenuItem7.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\pedido.png")); // NOI18N
         jMenuItem7.setText("Agenda");
         jMenu4.add(jMenuItem7);
 
-        jMenuItem8.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\dinheiro.png")); // NOI18N
         jMenuItem8.setText("Calculadora");
         jMenu4.add(jMenuItem8);
         jMenu4.add(jSeparator2);
 
-        jMenuItem9.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\prancheta.png")); // NOI18N
         jMenuItem9.setText("Bloco de Notas");
         jMenu4.add(jMenuItem9);
 
@@ -226,7 +211,6 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu5.setText("Sobre");
 
-        jMenuItem10.setIcon(new javax.swing.ImageIcon("C:\\Users\\comercial3\\OneDrive - SPS Power\\Documentos\\UC08\\Aula04\\Icones\\32 x 32\\painel-de-controle.png")); // NOI18N
         jMenuItem10.setText("Informações sobre o Sistema");
         jMenu5.add(jMenuItem10);
 
