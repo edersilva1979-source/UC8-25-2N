@@ -228,7 +228,7 @@ Implementar:
 
 # 🎯 Resultado Esperado
 
-Ao final da atividade o aluno deverá ser capaz de:
+Ao final da atividade todos deverão ser capazes de:
 
 ✅ Criar classes em Java
 
